@@ -8,11 +8,12 @@ class Balance
 {
     public static $is_initialized = false;
 
-    public static function initOnce() {
+    public static function initOnce()
+    {
         $pool = \Google\Protobuf\Internal\DescriptorPool::getGeneratedPool();
 
         if (static::$is_initialized == true) {
-          return;
+            return;
         }
         $pool->internalAddGeneratedFile(hex2bin(
             "0aec010a1470726f746f732f62616c616e63652e70726f746f1218506461" .
@@ -28,4 +29,3 @@ class Balance
         static::$is_initialized = true;
     }
 }
-

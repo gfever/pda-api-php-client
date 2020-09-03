@@ -4,8 +4,6 @@
 
 namespace PdaApi\PhpClient\Personal;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
@@ -137,7 +135,8 @@ class Properties extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\StringValue $defaultLanguage
      * }
      */
-    public function __construct($data = NULL) {
+    public function __construct($data = null)
+    {
         \GPBMetadata\Protos\Personal::initOnce();
         parent::__construct($data);
     }
@@ -182,6 +181,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getGenderValue()
     {
         $wrapper = $this->getGender();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -208,6 +208,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setGenderValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\Int32Value(['value' => $var]);
+
         return $this->setGender($wrappedVar);
     }
 
@@ -229,6 +230,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getIsVerifiedValue()
     {
         $wrapper = $this->getIsVerified();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -255,6 +257,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setIsVerifiedValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\BoolValue(['value' => $var]);
+
         return $this->setIsVerified($wrappedVar);
     }
 
@@ -276,6 +279,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getStatusValue()
     {
         $wrapper = $this->getStatus();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -302,6 +306,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setStatusValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\Int32Value(['value' => $var]);
+
         return $this->setStatus($wrappedVar);
     }
 
@@ -345,6 +350,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getCountryValue()
     {
         $wrapper = $this->getCountry();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -371,6 +377,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setCountryValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\Int32Value(['value' => $var]);
+
         return $this->setCountry($wrappedVar);
     }
 
@@ -392,6 +399,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getCityValue()
     {
         $wrapper = $this->getCity();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -418,6 +426,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setCityValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\StringValue(['value' => $var]);
+
         return $this->setCity($wrappedVar);
     }
 
@@ -439,6 +448,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getRegistrationIpValue()
     {
         $wrapper = $this->getRegistrationIp();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -465,6 +475,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setRegistrationIpValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\StringValue(['value' => $var]);
+
         return $this->setRegistrationIp($wrappedVar);
     }
 
@@ -486,6 +497,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getLastLoginIpValue()
     {
         $wrapper = $this->getLastLoginIp();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -512,6 +524,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setLastLoginIpValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\StringValue(['value' => $var]);
+
         return $this->setLastLoginIp($wrappedVar);
     }
 
@@ -533,6 +546,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getNodeIdValue()
     {
         $wrapper = $this->getNodeId();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -559,6 +573,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setNodeIdValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\Int32Value(['value' => $var]);
+
         return $this->setNodeId($wrappedVar);
     }
 
@@ -602,6 +617,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getTimezoneValue()
     {
         $wrapper = $this->getTimezone();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -628,6 +644,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setTimezoneValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\StringValue(['value' => $var]);
+
         return $this->setTimezone($wrappedVar);
     }
 
@@ -671,6 +688,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getLastVisitCountryValue()
     {
         $wrapper = $this->getLastVisitCountry();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -697,6 +715,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setLastVisitCountryValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\Int32Value(['value' => $var]);
+
         return $this->setLastVisitCountry($wrappedVar);
     }
 
@@ -718,6 +737,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getLastVisitCityValue()
     {
         $wrapper = $this->getLastVisitCity();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -744,6 +764,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setLastVisitCityValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\StringValue(['value' => $var]);
+
         return $this->setLastVisitCity($wrappedVar);
     }
 
@@ -809,6 +830,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getRegistrationFormNameValue()
     {
         $wrapper = $this->getRegistrationFormName();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -835,6 +857,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setRegistrationFormNameValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\StringValue(['value' => $var]);
+
         return $this->setRegistrationFormName($wrappedVar);
     }
 
@@ -856,6 +879,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getCountryOfRegistrationValue()
     {
         $wrapper = $this->getCountryOfRegistration();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -882,6 +906,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setCountryOfRegistrationValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\StringValue(['value' => $var]);
+
         return $this->setCountryOfRegistration($wrappedVar);
     }
 
@@ -903,6 +928,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getConfirmationEmailStatusValue()
     {
         $wrapper = $this->getConfirmationEmailStatus();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -929,6 +955,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setConfirmationEmailStatusValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\BoolValue(['value' => $var]);
+
         return $this->setConfirmationEmailStatus($wrappedVar);
     }
 
@@ -950,6 +977,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getConfirmationPhoneStatusValue()
     {
         $wrapper = $this->getConfirmationPhoneStatus();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -976,6 +1004,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setConfirmationPhoneStatusValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\BoolValue(['value' => $var]);
+
         return $this->setConfirmationPhoneStatus($wrappedVar);
     }
 
@@ -997,6 +1026,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getPhoneNumberPrefixValue()
     {
         $wrapper = $this->getPhoneNumberPrefix();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -1023,6 +1053,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setPhoneNumberPrefixValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\StringValue(['value' => $var]);
+
         return $this->setPhoneNumberPrefix($wrappedVar);
     }
 
@@ -1044,6 +1075,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function getDefaultLanguageValue()
     {
         $wrapper = $this->getDefaultLanguage();
+
         return is_null($wrapper) ? null : $wrapper->getValue();
     }
 
@@ -1070,8 +1102,7 @@ class Properties extends \Google\Protobuf\Internal\Message
     public function setDefaultLanguageValue($var)
     {
         $wrappedVar = is_null($var) ? null : new \Google\Protobuf\StringValue(['value' => $var]);
+
         return $this->setDefaultLanguage($wrappedVar);
     }
-
 }
-

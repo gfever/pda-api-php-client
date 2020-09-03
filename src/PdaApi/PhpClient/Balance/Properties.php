@@ -4,8 +4,6 @@
 
 namespace PdaApi\PhpClient\Balance;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
@@ -47,7 +45,8 @@ class Properties extends \Google\Protobuf\Internal\Message
      *     @type bool $is_active
      * }
      */
-    public function __construct($data = NULL) {
+    public function __construct($data = null)
+    {
         \GPBMetadata\Protos\Balance::initOnce();
         parent::__construct($data);
     }
@@ -161,6 +160,4 @@ class Properties extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

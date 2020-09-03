@@ -4,8 +4,6 @@
 
 namespace PdaApi\PhpClient\Balance;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
@@ -32,7 +30,8 @@ class Balance extends \Google\Protobuf\Internal\Message
      *     @type \PdaApi\PhpClient\Balance\Properties $properties
      * }
      */
-    public function __construct($data = NULL) {
+    public function __construct($data = null)
+    {
         \GPBMetadata\Protos\Balance::initOnce();
         parent::__construct($data);
     }
@@ -53,7 +52,7 @@ class Balance extends \Google\Protobuf\Internal\Message
      */
     public function setId($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -80,6 +79,4 @@ class Balance extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

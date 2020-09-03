@@ -4,8 +4,6 @@
 
 namespace PdaApi\PhpClient\Personal;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
@@ -32,7 +30,8 @@ class Personal extends \Google\Protobuf\Internal\Message
      *     @type \PdaApi\PhpClient\Personal\Properties $properties
      * }
      */
-    public function __construct($data = NULL) {
+    public function __construct($data = null)
+    {
         \GPBMetadata\Protos\Personal::initOnce();
         parent::__construct($data);
     }
@@ -53,7 +52,7 @@ class Personal extends \Google\Protobuf\Internal\Message
      */
     public function setId($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -80,6 +79,4 @@ class Personal extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-
