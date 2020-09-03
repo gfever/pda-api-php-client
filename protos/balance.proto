@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package PdaApi.PhpClient.Balance;
+
+message Balance {
+  string id = 1;
+  Properties properties = 2;
+}
+
+message Properties {
+  int32 currency = 1;
+  int32 userId = 2;
+  int32 nodeId = 3;
+  float amount = 4;
+  bool is_active = 5;
+}

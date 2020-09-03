@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package PdaApi.PhpClient.Personal;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+message Personal {
+  string id = 1;
+  Properties properties = 3;
+}
+
+message Properties {
+  int32 userId = 1;
+  google.protobuf.Int32Value gender = 2;
+  google.protobuf.BoolValue isVerified = 3;
+  google.protobuf.Int32Value status = 4;
+  google.protobuf.Timestamp birthdate = 5;
+  google.protobuf.Int32Value country = 6;
+  google.protobuf.StringValue city = 7;
+  google.protobuf.StringValue registrationIp = 8;
+  google.protobuf.StringValue lastLoginIp = 9;
+  google.protobuf.Int32Value nodeId = 10;
+  repeated google.protobuf.Int32Value socialNetwork = 11;
+  google.protobuf.StringValue timezone = 12;
+  google.protobuf.Timestamp createdAt = 13;
+  google.protobuf.Int32Value lastVisitCountry = 14;
+  google.protobuf.StringValue lastVisitCity = 15;
+  google.protobuf.Timestamp registeredAt = 16;
+  google.protobuf.Timestamp lastVisitAt = 17;
+  google.protobuf.StringValue registrationFormName = 18;
+  google.protobuf.StringValue countryOfRegistration = 19;
+  google.protobuf.BoolValue confirmationEmailStatus = 20;
+  google.protobuf.BoolValue confirmationPhoneStatus = 21;
+  google.protobuf.StringValue phoneNumberPrefix = 22;
+  google.protobuf.StringValue defaultLanguage = 23;
+}

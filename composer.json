@@ -1,22 +1,23 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "pda-api/php-client",
+    "description": "Pda API PHP client",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "pda-api",
+        "php-client"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/pda-api/php-client",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "d.ivashchenko",
+            "email": "d.ivashchenko@devcaz.com",
             "homepage": "https://spatie.be",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.4"
+        "php": "^7.4",
+        "google/protobuf": "^3.13"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
@@ -25,12 +26,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src"
+            "PdaApi\\PhpClient\\": "src/PdaApi/PhpClient",
+            "GPBMetadata\\": "src/GPBMetadata"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "PdaApi\\PhpClient\\Tests\\": "tests"
         }
     },
     "scripts": {

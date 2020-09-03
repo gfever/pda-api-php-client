@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package PdaApi.PhpClient;
+
+message Document {
+  string id = 1;
+  enum TYPE {
+    PERSONAL = 0;
+    FINANCIAL = 1;
+    BALANCE = 2;
+  };
+}

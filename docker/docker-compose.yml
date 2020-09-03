@@ -1,0 +1,16 @@
+version: '3.7'
+networks:
+  default:
+    external:
+      name: ${NETWORK_NAME}
+services:
+  pda-api-php-client:
+    build:
+      context: ../
+      dockerfile: docker/php/Dockerfile
+    image: pda-api-php-client
+    environment:
+      PHP_IDE_CONFIG: serverName=${IDE_SERVER_NAME}
+      XDEBUG_CONFIG: remote_host=${XDEBUG_REMOTE_HOST}
+    volumes:
+      - ../:/app
